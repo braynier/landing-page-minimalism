@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.usda-approved {
+  background-color: $color-grey;
+  padding: 2.5rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+  }
+
+  &__image {
+    flex: 0 0 10rem;
+    height: auto;
+  }
+  &__txt {
+    line-height: 1;
+    letter-spacing: 0.05em;
+    max-width: 40ch;
+  }
+}

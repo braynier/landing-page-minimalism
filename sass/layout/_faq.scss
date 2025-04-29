@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.faq-section {
+  background-color: $color-grey;
+  padding: 3.6rem 0;
+
+  &__container {
+    max-width: 92rem;
+  }
+
+  &__headline {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    flex: 0 0 2.4rem;
+    height: 2.4rem;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+  }
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__question {
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 4rem 0 0;
+    text-align: left;
+    transition: all 1.4s ease;
+    opacity: 0;
+  }
+  &__answer.open {
+    max-height: 250px;
+    padding: 1.8rem 4rem 4rem 0;
+    opacity: 1;
+  }
+}
