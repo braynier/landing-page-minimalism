@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400,600,700,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="header__container">
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -291,6 +291,49 @@
                 </div>
               </div>
             </div>
+            <div class="featured-products__slide swiper-slide">
+              <div class="product-card">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Lorem Ipsum</h3>
+                  <p class="product-card__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                    exercitationem non magni, atque nesciunt, sint ipsa numquam
+                    nulla soluta vel accusantium eaque excepturi totam nihil
+                    optio quibusdam! Obcaecati, et error!
+                    <span>Main Organic Ingiredents:</span>
+                  </p>
+                </div>
+                <div class="product-card__gallery">
+                  <div class="product-card__thumb">
+                    <img
+                      src="/img/featured-berry.png"
+                      alt="Product thumbnail"
+                    />
+                    <p class="product-card__name">organic acai berry</p>
+                  </div>
+                  <div class="product-card__thumb">
+                    <img
+                      src="/img/featured-acacia.png"
+                      alt="Product thumbnail"
+                    />
+                    <p class="product-card__name">organic acacia gum</p>
+                  </div>
+                  <div class="product-card__thumb">
+                    <img
+                      src="/img/featured-cinamon.png"
+                      alt="Product thumbnail"
+                    />
+                    <p class="product-card__name">
+                      organic ceylon cinnamon bark
+                    </p>
+                  </div>
+                  <div class="product-card__thumb">
+                    <img src="/img/featured-tea.png" alt="Product thumbnail" />
+                    <p class="product-card__name">organic green tea</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="featured-products__navigation">
@@ -308,6 +351,7 @@
           </h2>
 
           <div class="process-section__steps-wrapper">
+            <div class="process-section__vertical-line"></div>
             <div class="process-section__step">
               <div
                 class="process-section__content process-section__content--left"
@@ -325,6 +369,7 @@
                 <div
                   class="process-section__circle process-section__circle--right-half"
                 ></div>
+                <div class="process-section__circle-bg"></div>
                 <svg class="process-section__icon">
                   <use
                     xlink:href="/img/sprite.svg#icon-enchance-strength"
@@ -336,12 +381,12 @@
               <div
                 class="process-section__content process-section__content--right"
               >
-                <h4 class="process-section__subtitle">Mission</h4>
-                <p class="process-section__paragraph">
-                  Our team of researchers are working around the clock to
-                  uncover the best performance and health-boosting superfoods on
-                  the planet. We do the homework so you don’t have to. Each
-                  superfood is supported by strong clinical studies.
+                <h4 class="process-section__subtitle">The problem</h4>
+                <p class="process-section__description">
+                  our advisory panel reviews all of the scientific research in
+                  detail. Each ingredient must pass the rigorous approval
+                  process. Once approved, only then do our formulas move on to
+                  production.
                 </p>
               </div>
 
@@ -349,6 +394,7 @@
                 <div
                   class="process-section__circle process-section__circle--left-half"
                 ></div>
+                <div class="process-section__circle-bg"></div>
                 <svg class="process-section__icon">
                   <use xlink:href="/img/sprite.svg#icon-process-problem"></use>
                 </svg>
@@ -358,10 +404,10 @@
               <div
                 class="process-section__content process-section__content--left"
               >
-                <h4 class="process-section__subtitle">
+                <h4 class="process-section__subtitle text-right">
                   That isn’t therapeutic
                 </h4>
-                <p class="process-section__description">
+                <p class="process-section__description text-right">
                   Production takes place in our GMP-compliant, state of the art
                   manufacturing facility. Once again, only using 100% organic
                   ingredients that have been verified by the USDA.
@@ -372,6 +418,7 @@
                 <div
                   class="process-section__circle process-section__circle--right-half"
                 ></div>
+                <div class="process-section__circle-bg"></div>
                 <svg class="process-section__icon">
                   <use
                     xlink:href="/img/sprite.svg#icon-process-compliance"
@@ -396,6 +443,7 @@
                 <div
                   class="process-section__circle process-section__circle--left-half"
                 ></div>
+                <div class="process-section__circle-bg"></div>
                 <svg class="process-section__icon">
                   <use
                     xlink:href="/img/sprite.svg#icon-performance-endurance"
@@ -532,6 +580,6 @@
     </main>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="/js/js.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>

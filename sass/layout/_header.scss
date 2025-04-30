@@ -1,18 +1,18 @@
 @use "../abstracts" as *;
 
 .header {
-  padding: 2.4rem 0;
-  @include container;
-
   &__container {
+    padding: 2.4rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    width: 50%;
+    max-width: 50%;
   }
 
   &__nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
   }
 
   &__nav-list {
@@ -20,17 +20,16 @@
     gap: 2.4rem;
   }
 
-  &__nav-item {
-  }
-
   &__nav-link {
     color: $color-black;
     font-weight: 600;
     letter-spacing: 0.05em;
-    line-height: 100%;
   }
 
   &__logo {
+    flex: 1 0 1;
+    display: flex;
+    justify-content: end;
     font-size: 3.2rem;
     font-weight: 700;
     text-transform: uppercase;

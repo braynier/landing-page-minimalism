@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tab.addEventListener("click", () => {
       const isOpen = answer.classList.contains("open");
 
-      // Close all accordion items first
       faqItems.forEach((otherItem) => {
         const otherAnswer = otherItem.querySelector(".faq-section__answer");
         const otherIcon = otherItem.querySelector(".faq-section__icon");
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Toggle the clicked item
       if (!isOpen) {
         answer.classList.add("open");
         icon.style.transform = "rotate(90deg)";
@@ -44,27 +42,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const featuredProductsSwiper = new Swiper(".featured-products__swiper", {
-    // Optional parameters
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
 
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
 
-    // Pagination
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
 
-    // Breakpoints for responsiveness
     breakpoints: {
-      // when window width is >= 992px
       992: {
         slidesPerView: 1,
         spaceBetween: 40,

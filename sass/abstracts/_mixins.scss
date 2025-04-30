@@ -1,4 +1,17 @@
-@mixin container {
-  max-width: 192rem;
-  margin: 0 auto;
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
 }
